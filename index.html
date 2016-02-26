@@ -1,247 +1,378 @@
 <!DOCTYPE html>
 <html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Haast Tribute | FOSS4G 2016 Bonn</title>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
-    <link rel='stylesheet prefetch' href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css'>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Haast Tribute | FOSS4G 2016</title>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet prefetch' href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css'>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Dr. Johann Franz Julius von Haast</h1>
+                <h2>Passing from Bonn to Haast's Pass</h2>
+                <h3>A celebration of a New Zealand geographical pioneer, for FOSS4G 2016 (Bonn, Germany)</h3>
+            </div>
+            <div class="content">
+                <div class="wrapper">
+                    <div class="fix-right" id="mapbox"></div>
+                    <div class="scroll">
+                        <span title="Haast and his second wife Mary"><img class="rounded" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Julius_Haast_and_his_wife_Mary_1865.jpg" alt="Haast and his second wife Mary"></span>
+                        <ul>
+                            <li>
+                                <span class="date">1 May 1822</span>
+                                Born in
+                                <span class="location" data-name="bonn">Bonn, Germany</span>, the son of Anna Eva Theodora Ruth and her husband Mathias Haast, a merchant and sometime
+                                <span class="italic">burgomaster</span>
+                                (magistrate or mayor) of Bonn.
+                            </li>
+                            <li>
+                                <span class="date">1820s-1830s</span>
+                                Educated at grammar schools in Bonn and
+                                <span class="location" data-name="cologne">Cologne</span>.
+                            </li>
+                            <li>
+                                <span class="date">1840s</span>
+                                Studied geology at the
+                                <span class="location" data-name="rfwu">Rheinische Friedrich-Wilhelms-Universität</span>
+                                in Bonn, but did not graduate.
+                            </li>
+                            <li>
+                                <span class="date">1840s</span>
+                                After travelling throughout Europe, Haast settles in
+                                <span class="location" data-name="frankfurt">Frankfurt</span>, and works in the trade of books and also mineral samples.
+                            </li>
+                            <li>
+                                <span class="date">26 October 1846</span>
+                                Married Antonia Johanna Caroline Schmitt in
+                                <span class="location" data-name="frankfurt">Frankfurt</span>. Ultimately, the marriage was not happy.
+                            </li>
+                            <li>
+                                <span class="date">1848</span>
+                                With his wife, Haast had a son, Matthias Robert.
+                            </li>
+                            <li>
+                                <span class="date">1 May 1858</span>
+                                Accepted a proposal from the English shipowners,
+                                <span class="italic">Willis, Gann and Co.</span>, to travel to
+                                <span class="location" data-name="nz">New Zealand</span>
+                                and to report on the prospects for German emigration. Haast was fluent in English. Haast's eventual report was not favourable for the prospects of emigration, citing the young nation's financial difficulties, and hostilities between immigrants and
+                                Māori.
+                            </li>
+                            <li>
+                                <span class="date">September 1858—21 December 1858</span>
+                                Travelled from
+                                <span class="location" data-name="london-to-auckland">London to Auckland, New Zealand</span>
+                                on the
+                                <span class="italic">Evening Star</span>.
+                            </li>
+                            <li>
+                                <span class="date">22 December 1858</span>
+                                <a href="https://en.wikipedia.org/wiki/Ferdinand_von_Hochstetter">Ferdinand Hochstetter</a>
+                                (a geologist from
+                                <span class="location" data-name="esslingen">Esslingen, Württemberg</span>) arrives in
+                                <span class="location" data-name="auckland">Auckland</span>
+                                on the Australian frigate
+                                <span class="italic">Novara</span>. Haast meets hims this very day, at the home of another German emigrant, and the two become lifelong friends.
+                            </li>
+                            <li>
+                                <span class="date">1859</span>
+                                Haast and Hochstetter work together to do a number of geological expeditions in the
+                                <span class="location" data-name="auckland">Auckland</span>
+                                and
+                                <span class="location" data-name="nelson">Nelson</span>
+                                areas. Haast accompanies Hochstetter in investigating a coal field in
+                                <span class="location" data-name="drury">Drury</span>, where he also meets the explorer and surveror
+                                <a href="http://www.teara.govt.nz/en/biographies/1h14/heaphy-charles">Charles Heaphy</a>. They journey along the
+                                <span class="location" data-name="waikato-river">Waikato River</span>, interacting with many Māori before retuning to
+                                <span class="location" data-name="auckland">Auckland</span>
+                                in January 1859. Soon after, the party would explore much more of the
+                                <span class="location" data-name="waikato">Waikato region</span>, mostly untraversed by Pākehā, making its own maps.
+                            </li>
+                            <li>
+                                <span class="date">June 1859</span>
+                                Hochstetter and Haast go to the
+                                <span class="location" data-name="coromandel">Coromandel</span>
+                                to investigate gold fields.
+                            </li>
+                            <li>
+                                <span class="date">July 1859</span>
+                                Hochstetter and Haast sail to
+                                <span class="location" data-name="nelson">Nelson</span>. during this time, Haast performs several digs for moa bones, extracting several near-complete skeletons. At
+                                <span class="location" data-name="shakespeare-bay">Shakespeare Bay</span>, near the present-day site of the town of
+                                <span class="location" data-name="picton">Picton</span>, Haast correctly predicts the presence of gold based upon his inspection of the local geology.
+                            </li>
+                            <li>
+                                <span class="date">October 1859</span>
+                                Antonia Haast dies.
+                            </li>
+                            <li>
+                                <span class="date">Late 1859</span>
+                                Hochstetter departs from New Zealand; Haast is requested by the
+                                <span class="location" data-name="nelson">Nelson</span>
+                                provincial government to spend eight months exploring the
+                                <span class="location" data-name="nelson-west">western parts of the province</span>, a proposal to which he agrees.
+                            </li>
+                            <li>
+                                <span class="date">December 1859</span>
+                                Haast proposes that the Nelson geological survey be extended into
+                                <span class="location" data-name="canterbury">Canterbury</span>.
+                            </li>
+                            <li>
+                                <span class="date">1860</span>
+                                Haast's report on the Nelson province revealed the extent of the
+                                <span class="location" data-name="grey-river">Grey River</span>
+                                coalfields (initially discovered but underestimated by
+                                <a href="https://en.wikipedia.org/wiki/Thomas_Brunner">Thomas Brunner</a>), and found the
+                                <span class="location" data-name="denniston">Coalbrookdale (Denniston) seam</span>
+                                in the
+                                <span class="location" data-name="buller-river">Buller River</span>, which will significantly impact the development of the town of
+                                <span class="location" data-name="westport">Westport</span>. He also reported traces of gold found in
+                                <span class="location" data-name="westland">West Coast</span>
+                                rivers.
+                            </li>
+                            <li>
+                                <span class="date">November 1860</span>
+                                Haast is requested by the Canterbury Superintendent William Moorhouse to examine the site of a proposed
+                                <span class="location" data-name="lyttleton-tunnel">rail tunnel</span>
+                                between Lyttleton and the Canterbury Plains, which a contracter had abandoned after encountering hard rock. Haast's report was favourable and a new tunnel was completed.
+                            </li>
+                            <li>
+                                <span class="date">February 1861</span>
+                                Haast assumes the position of provincial geologist to Canterbury, and from this time is associated with the development of both science and art in Canterbury. Haast held this position until 1869.
+                            </li>
+                            <li>
+                                <span class="date">18 February 1861</span>
+                                Haast becomes a British subject.
+                            </li>
+                            <li>
+                                <span class="date">1861</span>
+                                Haast begins a museum based on his own collection, modestly housed in the
+                                <span class="location" data-name="canterbury-council">Canterbury council buildings</span>.
+                            </li>
+                            <li>
+                                <span class="date">1861—1873</span>
+                                Haast explores and maps the
+                                <span class="location" data-name="canterbury">Canterbury region</span>
+                                (which included
+                                <span class="location" data-name="westland">Westland</span>
+                                at this time), assessing mineral potential and making many observations.
+                                <ul>
+                                    <li>Made expeditions up all of the
+                                        <span class="location" data-name="canterbury-zoom">major Canterbury rivers</span>
+                                        to their sources. His alpine explorations yielded much new topographical, botanical, and geological information. In time he will collect many plans unknown to science, and many genera and species are named after him. Excavations at historical Māori
+                                        sites conducted under his supervision led to important contributions to ethnography.</li>
+                                    <li>Explored the headwaters of the
+                                        <span class="location" data-name="rangitata-river-headwaters">Rangitata River</span>.</li>
+                                    <li>Made the first systematic examination of the area surrounding
+                                        <span class="location" data-name="mt-cook">Mt Cook</span>, the tallest mountain in New Zealand.</li>
+                                    <li>
+                                        <span class="date">1861</span>
+                                        Discovers a coal seam in
+                                        <span class="location" data-name="kowai">Kowai</span>.</li>
+                                    <li>
+                                        <span class="date">1863</span>
+                                        Crossed what came to be known as the
+                                        <span class="location" data-name="haast-pass">Haast Pass</span>
+                                        in Haast's honour. This remains one of only three road passes (and one tunnel) of the
+                                        <span class="location" data-name="southern-alps">Main Divide</span>
+                                        in the South Island of New Zealand. It is the lowest of the three passes, and is now a State Highway (6).</li>
+                                    <li>
+                                        <span class="date">1865</span>
+                                        Haast correctly predicts the existence of artesian water beneath the
+                                        <span class="location" data-name="canterbury">Canterbury Plains</span>
+                                        gravel.</li>
+                                    <li>
+                                        <span class="date">1865</span>
+                                        Named the
+                                        <span class="location" data-name="franz-josef-glacier">Franz Josef Glacier</span>
+                                        after
+                                        <a href="https://en.wikipedia.org/wiki/Franz_Joseph_I_of_Austria">Emperor Franz Joseph I</a>
+                                        of
+                                        <span class="location" data-name="austria">Austria</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="date">July 1862</span>
+                                Haast founds the Philosophical Institute of Canterbury. Haast's enthusiam for science and art is inspiration to many. His voice and skill as a violist (he played under Felix Mandelssohn's baton in
+                                <span class="location" data-name="dusseldorf">Düsseldorf</span>) helped enrich the early musical scene of
+                                <span class="location" data-name="christchurch">Christchurch</span>.
+                            </li>
+                            <li>
+                                <span class="date">1862</span>
+                                Haast recieves an honourary degree of Doctor of Philosophy from the
+                                <span class="location" data-name="university-tubingen">University of Tübingen</span>.
+                            </li>
+                            <li>
+                                <span class="date">25 June 1863</span>
+                                Marries Mary Dobson at
+                                <span class="location" data-name="st-marys-heathcote">St. Mary's Church</span>, Heathcote, Christchurch. They will go on to have five children.
+                            </li>
+                            <li>
+                                <span class="date">1865</span>
+                                The discovery of a well-preserved store of moa remains in a swamp in
+                                <span class="location" data-name="glenmark">Glenmark</span>
+                                (Waipara) excites Haast, who boosted the reputation of his museum by sending the remains overseas in exchange for valuable additions to the
+                                <span class="location" data-name="canterbury-council">Canterbury museum</span>. Haast's later papers on the moa and other New Zealand discoveries were read before the Geological and Zoological societies of London and the Royal Geographical Society.
+                            </li>
+                            <li>
+                                <span class="date">1867</span>
+                                Haast is elected a fellow of the Royal Society.
+                            </li>
+                            <li>
+                                <span class="date">1868</span>
+                                The expansion of Haast's museum led to the design of a new building by B. W. Beaumont, to which Haast is apppointed director.
+                            </li>
+                            <li>
+                                <span class="date">1870</span>Haast's new science museum (the
+                                <span class="location" data-name="canterbury-museum">Canterbury Museum)</span>
+                                is opened, with himself appointed as curator. An ordinance establishes public library and school of technical science in association with the museum; Haast objected to the presence of the school.
+                            </li>
+                            <li>
+                                <span class="date">1871</span>
+                                Haast is among those who established the Canterbury Collegiate Union, which promoted the establishment of
+                                <span class="location" data-name="uc">Canterbury College</span>
+                                (University of Canterbury) and its affiliation with the University of New Zealand. Haast taught geology and paleotologgy within the college.
+                            </li>
+                            <li>
+                                <span class="date">1871</span>
+                                Haast's eagle is described for the first time by Julius Haast, from remains found by F. Fuller in a former marsh. Its scientific name,
+                                <span class="italic">Harpagornis moorei</span>
+                                is given by Haast after the name of the owner of the
+                                <span class="location" data-name="glenmark">Glenmark Estate</span>, George Henry Moore, on whose property the bones of the first bird were found. Haast's eagle is believed to have become extinct around 1400.
+                            </li>
+                            <li>
+                                <span class="date">1875</span>
+                                Haast is conferred a hereditary knighthood by the emperor of Austria. This entitles him to the style himself "von Haast".
+                            </li>
+                            <li>
+                                <span class="date">1876</span>
+                                von Haast becomes the first professor of geology at Canterury College, and held this position until his death.
+                            </li>
+                            <li>
+                                <span class="date">1879</span>
+                                Publishes
+                                <span class="italic">Geology of the provinces of Canterbury and Westland, New Zealand</span>. This book summarised his work to date, and includs hand-drawn maps and illustrations, often drawn by his own hand.
+                            </li>
+                            <li>
+                                <span class="date">1879—1887</span>
+                                von Haast serves as a member of the
+                                <span class="location" data-name="vuw">senate of the University of New Zealand</span>.
+                            </li>
+                            <li>
+                                <span class="date">1883</span>
+                                Becomes a Companion to the
+                                <a href="https://en.wikipedia.org/wiki/Order_of_St_Michael_and_St_George">Order of St Michael and St George (CMG)</a>
+                            </li>
+                            <li>
+                                <span class="date">1884</span>
+                                von Haast is awarded the
+                                <a href="https://en.wikipedia.org/wiki/Gold_Medal_%28RGS%29">Patron's Gold Medal</a>
+                                of the
+                                <span class="location" data-name="rgs">Royal Geographical Society</span>
+                                for his explorations in New Zealand.
+                            </li>
+                            <li>
+                                <span class="date">1886</span>
+                                Awarded an honourary degree of Doctor of Science from
+                                <span class="location" data-name="cambridge-university">Cambridge University</span>.
+                            </li>
+                            <li>
+                                <span class="date">1886</span>
+                                von Haast visits Europe as a New Zealand comissioner for the Colonial and Indian Exhibition in London.
+                            </li>
+                            <li>
+                                <span class="date">1886</span>
+                                Becomes a Knight Commander of the Order of St Michael and St George (KCMG).
+                            </li>
+                            <li>
+                                <span class="date">16 August 1887</span>
+                                von Haast dies in Christchurch, New Zealand. He is buried in the grounds of the former
+                                <span class="location" data-name="holy-trinity">Holy Trinity Church</span>
+                                in Stanmore Road, Christchurch. The church was devastated in the 2011 Canterbury earthquake, and has been demolished. His grave can still be visited near the location of the former church.
+                            </li>
+                        </ul>
+                        <span title="Haast's grave near the devastated Holy Trinity church in Christchurch"><img class="slight-round" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Von_Haast_36.jpg" alt="Haast's grave near the devastated Holy Trinity Church in Christchurch"></span>
+                        <h3>Criticisms of Haast</h3>
+                        <p>
+                            Haast was ambitious, meticulous, and seemingly obsessed with external recognition for his work: actively seeking personal honours in New Zealand and Europe. His reports were voluminous and extremely detailed—adjectives which were used in a
+                            disparaging light.
+                        </p>
+                        <h3>Selected legacy</h3>
+                        <ul>
+                            <li>
+                                <span class="location" data-name="haast-pass">
+                                    <a href="https://en.wikipedia.org/wiki/Haast_Pass">Haast's Pass, New Zealand</a>
+                                </span>.
+                            </li>
+                            <li>
+                                <span class="location" data-name="haast">
+                                    <a href="https://en.wikipedia.org/wiki/Haast,_New_Zealand">Haast, New Zealand</a>
+                                </span>, 2006 population of 297 people, spread in three communities: the Haast township, Haast Junction, and Haast Beach.
+                            </li>
+                            <li>
+                                <span class="location" data-name="haast-pass">
+                                    <a href="https://en.wikipedia.org/wiki/Haast_River">The Haast River</a>
+                                </span>, most of which is within the Te Wahipounamu World Heritage site. A
+                                <span class="location" data-name="haast-bridge">road bridge over the river</span>
+                                is the longest one-lane road bride in New Zealand, and the seventh-longest bridge in New Zealand.
+                            </li>
+                            <li>
+                                The schist found in New Zealand is called "Haast schist" as a tribute to von Haast's contributions to the nation's geology. The schist is found on the eastern side of the
+                                <span class="location" data-name="southern-alps">Alpine Fault</span>
+                                in the South Island.
+                            </li>
+                            <li>
+                                The Haast brown kiwi,
+                                <span class="italics">Apteryx haastii</span>, the rarest subspecies of the South Island brown kiwi (only about 250 birds live), bears von Haast's name, and is only found near the town of
+                                <span class="location" data-name="haast">Haast</span>.
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/Haast's_eagle">Haast's eagle<a>
+                                        bears his name. It is an extinct species of eagle once extant in the South Island of New Zealand, and was the largest species of eagle known to have existed. It was even larger than the largest living vultures.
+                                    </li>
+                                </ul>
+                                <h3>
+                                    Sources
+                                </h3>
+                                <ul>
+                                    <li>
+                                        Malin, P. B.
+                                        <a href="http://www.teara.govt.nz/en/biographies/1h1/haast-johann-franz-julius-von">
+                                            <span class="italic">Haast, Johann Franz Julius von</span>
+                                        </a>. Te Ara, the Encyclopedia of New Zealand. October 2013.
+                                    </li>
+                                    <li>
+                                        Haast, H. F. von.
+                                        <span class="italic">The life and times of Sir Julius von Haast</span>. Wellington, 1948.
+                                    </li>
+                                    <li>
+                                        Meduna, V. & Priestly, R.
+                                        <span class="italic">Atoms, Dinosaurs & DNA: 68 Great New Zealand Scientists</span>. Random House New Zealand Ltd., 2008.
+                                    </li>
+                                </ul>
+                                <h3>
+                                    About
+                                </h3>
+                                <div id="about">
+                                    <p>
+                                        <a href="http://foss4g.org/">FOSS4G 2016</a>
+                                        will be held in
+                                        <span class="location" data-name="bonn">Bonn, Germany</span>, in August. This annual has been held almost every year since 2004. It brings together many of those interested in free and open source software (FOSS) for geographic information systems
+                                        (GIS). As Haast was born and raised in Bonn, I decided to make this meagre tribute to a man who such an influence on the development of science and in particular geography in New Zealand, my home.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+                <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-  <body>
-    <div class="container">
-  <div class="header">
-    <h1>Dr. Johann Franz Julius von Haast</h1>
-    <h2>Passing from Bonn to Haast's Pass</h2>
-    <h3>A celebration of a New Zealand geographical pioneer, for FOSS4G 2016 (Bonn, Germany)</h3>
-  </div>
-  <div class="content">
-    <div class="wrapper">
-      <div class="fix-right" id="mapbox"></div>
-      <div class="scroll">
-        <span title="Haast and his second wife Mary"><img class="rounded" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Julius_Haast_and_his_wife_Mary_1865.jpg" alt="Haast and his second wife Mary"></span>
-        <ul>
-          <li>
-            <span class="date">1 May 1822</span> Born in <span class="location" data-name="bonn">Bonn, Germany</span>, the son of Anna Eva Theodora Ruth and her husband Mathias Haast, a merchant and sometime <span class="italic">burgomaster</span> (magistrate
-            or mayor) of Bonn.
-          </li>
-          <li>
-            <span class="date">1820s-1830s</span> Educated at grammar schools in Bonn and <span class="location" data-name="cologne">Cologne</span>.
-          </li>
-          <li>
-            <span class="date">1840s</span> Studied geology at the <span class="location" data-name="rfwu">Rheinische Friedrich-Wilhelms-Universität</span> in Bonn, but did not graduate.
-          </li>
-          <li>
-            <span class="date">1840s</span> After travelling throughout Europe, Haast settles in <span class="location" data-name="frankfurt">Frankfurt</span>, and works in the trade of books and also mineral samples.
-          </li>
-          <li>
-            <span class="date">26 October 1846</span> Married Antonia Johanna Caroline Schmitt in <span class="location" data-name="frankfurt">Frankfurt</span>. Ultimately, the marriage was not happy.
-          </li>
-          <li>
-            <span class="date">1848</span> With his wife, Haast had a son, Matthias Robert.
-          </li>
-          <li>
-            <span class="date">1 May 1858</span> Accepted a proposal from the English shipowners, <span class="italic">Willis, Gann and Co.</span>, to travel to <span class="location" data-name="nz">New Zealand</span> and to report on the prospects for
-            German emigration. Haast was fluent in English. Haast's eventual report was not favourable for the prospects of emigration, citing the young nation's financial difficulties, and hostilities between immigrants and Māori.
-          </li>
-          <li>
-            <span class="date">September 1858—21 December 1858</span> Travelled from <span class="location" data-name="london-to-auckland">London to Auckland, New Zealand</span> on the <span class="italic">Evening Star</span>.
-          </li>
-          <li>
-            <span class="date">22 December 1858</span> <a href="https://en.wikipedia.org/wiki/Ferdinand_von_Hochstetter">Ferdinand Hochstetter</a> (a geologist from <span class="location" data-name="esslingen">Esslingen, Württemberg</span>) arrives in
-            <span class="location" data-name="auckland">Auckland</span> on the Australian frigate
-            <span class="italic">Novara</span>. Haast meets hims this very day, at the home of another German emigrant, and the two become lifelong friends.
-          </li>
-          <li>
-            <span class="date">1859</span> Haast and Hochstetter work together to do a number of geological expeditions in the <span class="location" data-name="auckland">Auckland</span> and <span class="location" data-name="nelson">Nelson</span> areas.
-            Haast accompanies Hochstetter in investigating a coal field in <span class="location" data-name="drury">Drury</span>, where he also meets the explorer and surveror
-            <a href="http://www.teara.govt.nz/en/biographies/1h14/heaphy-charles">Charles Heaphy</a>. They journey along the <span class="location" data-name="waikato-river">Waikato River</span>, interacting with many Māori before retuning to <span class="location"
-              data-name="auckland">Auckland</span> in January 1859. Soon after, the party would explore much more of the <span class="location" data-name="waikato">Waikato region</span>, mostly untraversed by Pākehā, making its own maps.
-          </li>
-          <li>
-            <span class="date">June 1859</span> Hochstetter and Haast go to the <span class="location" data-name="coromandel">Coromandel</span> to investigate gold fields.
-          </li>
-          <li>
-            <span class="date">July 1859</span> Hochstetter and Haast sail to <span class="location" data-name="nelson">Nelson</span>. during this time, Haast performs several digs for moa bones, extracting several near-complete skeletons. At <span class="location"
-              data-name="shakespeare-bay">Shakespeare Bay</span>, near the present-day site of the town of <span class="location" data-name="picton">Picton</span>, Haast correctly predicts the presence of gold based upon his inspection of the local geology.
-          </li>
-          <li>
-            <span class="date">October 1859</span> Antonia Haast dies.
-          </li>
-          <li>
-            <span class="date">Late 1859</span> Hochstetter departs from New Zealand; Haast is requested by the <span class="location" data-name="nelson">Nelson</span> provincial government to spend eight months exploring the <span class="location" data-name="nelson-west">western parts of the province</span>,
-            a proposal to which he agrees.
-          </li>
-          <li>
-            <span class="date">December 1859</span> Haast proposes that the Nelson geological survey be extended into <span class="location" data-name="canterbury">Canterbury</span>.
-          </li>
-          <li>
-            <span class="date">1860</span> Haast's report on the Nelson province revealed the extent of the <span class="location" data-name="grey-river">Grey River</span> coalfields (initially discovered but underestimated by <a href="https://en.wikipedia.org/wiki/Thomas_Brunner">Thomas Brunner</a>),
-            and found the <span class="location" data-name="denniston">Coalbrookdale (Denniston) seam</span> in the <span class="location" data-name="buller-river">Buller River</span>, which will significantly impact the development of the town of
-            <span class="location" data-name="westport">Westport</span>. He also reported traces of gold found in <span class="location" data-name="westland">West Coast</span> rivers.
-          </li>
-          <li>
-            <span class="date">November 1860</span> Haast is requested by the Canterbury Superintendent William Moorhouse to examine the site of a proposed <span class="location" data-name="lyttleton-tunnel">rail tunnel</span> between Lyttleton and the
-            Canterbury Plains, which a contracter had abandoned after encountering hard rock. Haast's report was favourable and a new tunnel was completed.
-          </li>
-          <li>
-            <span class="date">February 1861</span> Haast assumes the position of provincial geologist to Canterbury, and from this time is associated with the development of both science and art in Canterbury. Haast held this position until 1869.
-          </li>
-          <li>
-            <span class="date">18 February 1861</span> Haast becomes a British subject.
-          </li>
-          <li>
-            <span class="date">1861</span> Haast begins a museum based on his own collection, modestly housed in the <span class="location" data-name="canterbury-council">Canterbury council buildings</span>.
-          </li>
-          <li>
-            <span class="date">1861—1873</span> Haast explores and maps the <span class="location" data-name="canterbury">Canterbury region</span> (which included <span class="location" data-name="westland">Westland</span> at this time), assessing mineral
-            potential and making many observations.
-            <ul>
-              <li>Made expeditions up all of the <span class="location" data-name="canterbury-zoom">major Canterbury rivers</span> to their sources. His alpine explorations yielded much new topographical, botanical, and geological information. In time he
-                will collect many plans unknown to science, and many genera and species are named after him. Excavations at historical Māori sites conducted under his supervision led to important contributions to ethnography.</li>
-              <li>Explored the headwaters of the <span class="location" data-name="rangitata-river-headwaters">Rangitata River</span>.</li>
-              <li>Made the first systematic examination of the area surrounding <span class="location" data-name="mt-cook">Mt Cook</span>, the tallest mountain in New Zealand.</li>
-              <li><span class="date">1861</span> Discovers a coal seam in <span class="location" data-name="kowai">Kowai</span>.</li>
-              <li><span class="date">1863</span> Crossed what came to be known as the <span class="location" data-name="haast-pass">Haast Pass</span> in Haast's honour. This remains one of only three road passes (and one tunnel) of the <span class="location"
-                  data-name="southern-alps">Main Divide</span> in the South Island of New Zealand. It is the lowest of the three passes, and is now a State Highway (6).</li>
-              <li><span class="date">1865</span> Haast correctly predicts the existence of artesian water beneath the <span class="location" data-name="canterbury">Canterbury Plains</span> gravel.</li>
-              <li><span class="date">1865</span> Named the <span class="location" data-name="franz-josef-glacier">Franz Josef Glacier</span> after <a href="https://en.wikipedia.org/wiki/Franz_Joseph_I_of_Austria">Emperor Franz Joseph I</a> of <span class="location"
-                  data-name="austria">Austria</span></li>
-            </ul>
-          </li>
-          <li>
-            <span class="date">July 1862</span> Haast founds the Philosophical Institute of Canterbury. Haast's enthusiam for science and art is inspiration to many. His voice and skill as a violist (he played under Felix Mandelssohn's baton in
-            <span class="location" data-name="dusseldorf">Düsseldorf</span>) helped enrich the early musical scene of <span class="location" data-name="christchurch">Christchurch</span>.
-          </li>
-          <li>
-            <span class="date">1862</span> Haast recieves an honourary degree of Doctor of Philosophy from the <span class="location" data-name="university-tubingen">University of Tübingen</span>.
-          </li>
-          <li>
-            <span class="date">25 June 1863</span> Marries Mary Dobson at <span class="location" data-name="st-marys-heathcote">St. Mary's Church</span>, Heathcote, Christchurch. They will go on to have five children.
-          </li>
-          <li>
-            <span class="date">1865</span> The discovery of a well-preserved store of moa remains in a swamp in <span class="location" data-name="glenmark">Glenmark</span> (Waipara) excites Haast, who boosted the reputation of his museum by sending the
-            remains overseas in exchange for valuable additions to the <span class="location" data-name="canterbury-council">Canterbury museum</span>. Haast's later papers on the moa and other New Zealand discoveries were read before the Geological and
-            Zoological societies of London and the Royal Geographical Society.
-          </li>
-          <li>
-            <span class="date">1867</span> Haast is elected a fellow of the Royal Society.
-          </li>
-          <li>
-            <span class="date">1868</span> The expansion of Haast's museum led to the design of a new building by B. W. Beaumont, to which Haast is apppointed director.
-          </li>
-          <li>
-            <span class="date">1870</span>Haast's new science museum (the <span class="location" data-name="canterbury-museum">Canterbury Museum)</span> is opened, with himself appointed as curator. An ordinance establishes public library and school of
-            technical science in association with the museum; Haast objected to the presence of the school.
-          </li>
-          <li>
-            <span class="date">1871</span> Haast is among those who established the Canterbury Collegiate Union, which promoted the establishment of <span class="location" data-name="uc">Canterbury College</span> (University of Canterbury) and its affiliation
-            with the University of New Zealand. Haast taught geology and paleotologgy within the college.
-          </li>
-          <li>
-            <span class="date">1871</span> Haast's eagle is described for the first time by Julius Haast, from remains found by F. Fuller in a former marsh. Its scientific name, <span class="italic">Harpagornis moorei</span> is given by Haast after the
-            name of the owner of the <span class="location" data-name="glenmark">Glenmark Estate</span>, George Henry Moore, on whose property the bones of the first bird were found. Haast's eagle is believed to have become extinct around 1400.
-          </li>
-          <li>
-            <span class="date">1875</span> Haast is conferred a hereditary knighthood by the emperor of Austria. This entitles him to the style himself "von Haast".
-          </li>
-          <li>
-            <span class="date">1876</span> von Haast becomes the first professor of geology at Canterury College, and held this position until his death.
-          </li>
-          <li>
-            <span class="date">1879</span> Publishes <span class="italic">Geology of the provinces of Canterbury and Westland, New Zealand</span>. This book summarised his work to date, and includs hand-drawn maps and illustrations, often drawn by his
-            own hand.
-          </li>
-          <li>
-            <span class="date">1879—1887</span> von Haast serves as a member of the <span class="location" data-name="vuw">senate of the University of New Zealand</span>.
-          </li>
-          <li>
-            <span class="date">1883</span> Becomes a Companion to the <a href="https://en.wikipedia.org/wiki/Order_of_St_Michael_and_St_George">Order of St Michael and St George (CMG)</a>
-          </li>
-          <li>
-            <span class="date">1884</span> von Haast is awarded the <a href="https://en.wikipedia.org/wiki/Gold_Medal_%28RGS%29">Patron's Gold Medal</a> of the <span class="location" data-name="rgs">Royal Geographical Society</span> for his explorations
-            in New Zealand.
-          </li>
-          <li>
-            <span class="date">1886</span> Awarded an honourary degree of Doctor of Science from <span class="location" data-name="cambridge-university">Cambridge University</span>.
-          </li>
-          <li>
-            <span class="date">1886</span> von Haast visits Europe as a New Zealand comissioner for the Colonial and Indian Exhibition in London.
-          </li>
-          <li>
-            <span class="date">1886</span> Becomes a Knight Commander of the Order of St Michael and St George (KCMG).
-          </li>
-          <li>
-            <span class="date">16 August 1887</span> von Haast dies in Christchurch, New Zealand. He is buried in the grounds of the former <span class="location" data-name="holy-trinity">Holy Trinity Church</span> in Stanmore Road, Christchurch. The
-            church was devastated in the 2011 Canterbury earthquake, and has been demolished. His grave can still be visited near the location of the former church.
-          </li>
-        </ul>
-        <span title="Haast's grave near the devastated Holy Trinity church in Christchurch"><img class="slight-round" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Von_Haast_36.jpg" alt="Haast's grave near the devastated Holy Trinity Church in Christchurch"></span>
-        <h3>Criticisms of Haast</h3>
-        <p>
-          Haast was ambitious, meticulous, and seemingly obsessed with external recognition for his work: actively seeking personal honours in New Zealand and Europe. His reports were voluminous and extremely detailed—adjectives which were used in a disparaging
-          light.
-        </p>
-        <h3>Selected legacy</h3>
-        <ul>
-          <li>
-            <span class="location" data-name="haast-pass"><a href="https://en.wikipedia.org/wiki/Haast_Pass">Haast's Pass, New Zealand</a></span>.
-          </li>
-          <li>
-            <span class="location" data-name="haast"><a href="https://en.wikipedia.org/wiki/Haast,_New_Zealand">Haast, New Zealand</a></span>, 2006 population of 297 people, spread in three communities: the Haast township, Haast Junction, and Haast Beach.
-          </li>
-          <li>
-            <span class="location" data-name="haast-pass"><a href="https://en.wikipedia.org/wiki/Haast_River">The Haast River</a></span>, most of which is within the Te Wahipounamu World Heritage site. A <span class="location" data-name="haast-bridge">road bridge over the river</span>            is the longest one-lane road bride in New Zealand, and the seventh-longest bridge in New Zealand.
-          </li>
-          <li>
-            The schist found in New Zealand is called "Haast schist" as a tribute to von Haast's contributions to the nation's geology. The schist is found on the eastern side of the <span class="location" data-name="southern-alps">Alpine Fault</span>            in the South Island.
-          </li>
-          <li>
-            The Haast brown kiwi, <span class="italics">Apteryx haastii</span>, the rarest subspecies of the South Island brown kiwi (only about 250 birds live), bears von Haast's name, and is only found near the town of <span class="location" data-name="haast">Haast</span>.
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Haast's_eagle">Haast's eagle<a> bears his name. It is an extinct species of eagle once extant in the South Island of New Zealand, and was the largest species of eagle known to have existed. It was even larger than the largest living vultures.
-          </li>
-        </ul>
-        <h3>
-          Sources
-        </h3>
-        <ul>
-          <li>
-            Malin, P. B. <a href="http://www.teara.govt.nz/en/biographies/1h1/haast-johann-franz-julius-von"><span class="italic">Haast, Johann Franz Julius von</span></a>. Te Ara, the Encyclopedia of New Zealand. October 2013.
-          </li>
-          <li>
-            Haast, H. F. von. <span class="italic">The life and times of Sir Julius von Haast</span>. Wellington, 1948.
-          </li>
-          <li>
-            Meduna, V. & Priestly, R. <span class="italic">Atoms, Dinosaurs & DNA: 68 Great New Zealand Scientists</span>. Random House New Zealand Ltd., 2008.
-          </li>
-        </ul>
-        <h4>
-          About
-        </h4>
-        <div id="about">
-          <p>
-            <a href="http://foss4g.org/">FOSS4G 2016</a> will be held in
-            <span class="location" data-name="bonn">Bonn, Germany</span>. This annual event has been held almost every year since 2004. It brings together many of those interested in free and open source software (FOSS) for geographic information systems
-            (GIS). I'm from New Zealand, and I'd really love to attend. I've also had a fascination with Julius von Haast since I began staring at topographical maps of New Zealand and admired the contour lines around the Haast Pass. As Haast was born
-            and raised in Bonn, I decided to make this meagre tribute to a man who has had a profound influence on the development of science and in particular geography in New Zealand.
-          <br><br>
-            If you are interested in translating this page into German, please contact me. Also contact me if you can somehow fly me to Bonn in time for FOSS4G 2016!
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                <script src="js/index.js"></script>
 
-        <script src="js/index.js"></script>
-
-
-
-
-  </body>
-</html>
+            </body>
+        </html>

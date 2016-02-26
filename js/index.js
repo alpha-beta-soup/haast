@@ -70,6 +70,10 @@
       "zoom": 13,
       "coordinates": [-37.1, 174.95]
     },
+    "waikato-river": {
+      "zoom": 11,
+      "coordinates": [-37.471891, 175.147781]
+    },
     "waikato": {
       "zoom": 8,
       "coordinates": [-37.7833, 175.2833]
@@ -193,6 +197,10 @@
     "haast-bridge": {
       "zoom": 16,
       "coordinates": [-43.8555061, 169.04861]
+    },
+    "london-to-auckland": {
+      "zoom": 1,
+      "coordinates": [0, 90]
     }
   };
 
